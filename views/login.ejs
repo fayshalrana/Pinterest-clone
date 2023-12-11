@@ -1,0 +1,23 @@
+<%include ./Partials/header.ejs%>
+<div class="container">
+    <div class="content">
+      <!--pinterest logo-->
+      <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="pin logo" class="img1" />
+      <p class="header">Login to see more</p>
+      <%if(error.length > 0){ %>
+        <p><%=error%></p>
+      <%}%>
+
+      <form action="/login" method="post">
+        <input name="username" type="text" placeholder="User Name" class="detail" /><br />
+      <input name="password" type="password" placeholder="Password" class="detail" />
+
+      <button class="btn int">Log In</button>
+      </form>
+
+      <footer>
+        <a href="/">Not on Pinterest yet? <strong>Sign up</strong></a>
+      </footer>
+    </div>
+  </div>
+<%include ./Partials/footer.ejs%>

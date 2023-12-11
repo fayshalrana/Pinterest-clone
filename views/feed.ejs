@@ -1,0 +1,17 @@
+<%include ./Partials/header.ejs%>
+<div class="grid">
+  <%allPosts.forEach(function(post){ %>
+  <div class="grid-item">
+    <img src="/images/uploads/<%=post.postImage%>" />
+  </div>
+  <%})%>
+</div>
+
+<script>
+  $(".grid").imagesLoaded(function () {
+    $(".grid").masonry({
+      itemSelector: ".grid-item",
+    });
+  });
+</script>
+<%include ./Partials/footer.ejs%>

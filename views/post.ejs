@@ -1,0 +1,10 @@
+<%include ./Partials/header.ejs%>
+<div class="flex w-full h-screen justify-center items-center">
+        <form class="posts_box flex gap-3 flex-col items-start" action="/upload" method="post" enctype="multipart/form-data">
+            <input class="p-1" type="text" name="title" placeholder="Enter Your post Title">
+            <input class="p-1" type="text" name="description" placeholder="Enter Your post Description">
+            <input type="file" name="postImage">
+            <button class="bg-red-700 px-8 text-white font-semibold py-2" type="submit">Post</button>
+        </form>
+</div>
+<%include ./Partials/footer.ejs%>

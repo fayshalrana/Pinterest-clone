@@ -1,0 +1,24 @@
+<%include ./Partials/header.ejs%>
+<div class="container">
+    <div class="content">
+      <!--pinterest logo-->
+      <img src="https://i.pinimg.com/originals/d3/d1/75/d3d175e560ae133f1ed5cd4ec173751a.png" alt="pin logo" class="img1" />
+      <p class="header">Create an account</p>
+
+      <form action="/register" method="post">
+        <input name="username" type="text" placeholder="User Name" class="detail" /><br />
+        <input name="fullname" type="text" placeholder="Full Name" class="detail" /><br />
+        <input name="email" type="email" placeholder="Email" class="detail" /><br />
+      <input name="password" type="password" placeholder="Password" class="detail" />
+
+      <button class="btn int">Register</button>
+      </form>
+
+      <footer>
+        <a href="/login">Already on Pinterest yet? <strong>Sign In</strong></a>
+      </footer>
+    </div>
+  </div>
+
+<%include ./Partials/footer.ejs%>
+  
